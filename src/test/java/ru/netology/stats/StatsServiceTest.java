@@ -12,6 +12,7 @@ public class StatsServiceTest {
         long actual = service.sumSales(data);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void calculationAverageAmount() {
         long[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -20,6 +21,7 @@ public class StatsServiceTest {
         long actual = service.averageSum(data);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void monthOfMaximumSales() {
         long[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -28,6 +30,7 @@ public class StatsServiceTest {
         long actual = service.maximumSales(data);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void monthOfMinimumSales() {
         long[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -36,6 +39,7 @@ public class StatsServiceTest {
         long actual = service.minimumSales(data);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void monthOfSalesAboveAverage() {
         long[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
@@ -44,6 +48,7 @@ public class StatsServiceTest {
         long actual = service.monthAverageMax(data);
         Assertions.assertEquals(expected, actual);
     }
+
     @Test
     public void monthOfSalesBelowAverage() {
         long[] data = {8, 15, 13, 15, 17, 20, 19, 20, 7, 14, 14, 18};
